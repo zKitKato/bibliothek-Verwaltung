@@ -8,11 +8,11 @@ import net.kato.bibliothekVerwaltungBackend.dto.CategoryDTO;
 
 public class CategoryDAOimpl  implements CategoryDAO {
 
+    private static List<CategoryDTO> categories = new ArrayList<CategoryDTO>();
 
     /*
     * Testing Purpose data
     * */
-    private static List<CategoryDTO> categories = new ArrayList<CategoryDTO>();
 
     static{
         CategoryDTO c1 = new CategoryDTO();
