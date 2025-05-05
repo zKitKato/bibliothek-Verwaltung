@@ -16,10 +16,12 @@ public class AuthorDAOimpl implements AuthorDAO {
 
     static {
         AuthorDTO a1 = new AuthorDTO();
+        a1.setId(1);
         a1.setFirstName("Anton");
         a1.setLastName("Zeillinger");
 
         AuthorDTO a2 = new AuthorDTO();
+        a2.setId(2);
         a2.setFirstName("Francis");
         a2.setLastName("Scott Key Fitzgerald");
 

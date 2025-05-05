@@ -17,7 +17,7 @@ public class CategoryDAOimpl  implements CategoryDAO {
     static{
         CategoryDTO c1 = new CategoryDTO();
         c1.setId(1);
-        c1.setName("Physic");
+        c1.setName("Scientific");
         c1.setDescription("Scientific Books for Physic's");
 
         CategoryDTO c2 = new CategoryDTO();
@@ -29,6 +29,12 @@ public class CategoryDAOimpl  implements CategoryDAO {
         c3.setId(3);
         c3.setName("Horror");
         c3.setDescription("Description for Horror");
+
+        CategoryDTO c4 = new CategoryDTO();
+        c4.setId(4);
+        c4.setName("novel");
+        c4.setDescription("Description for novel");
+
 
     }
 
