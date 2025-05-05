@@ -5,7 +5,7 @@
 - creating Porject Structure => *Done*
   - Backend and Frontend Folder
 
-- creating DTO, DAO, DAOimpl => *DONE* 
+- creating DTO, DAO, DAOimpl => *DONE*
   - Benutzer
   - Buch 
 
