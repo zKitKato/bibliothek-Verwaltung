@@ -9,7 +9,7 @@
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>BibliothekVerwakung Webapp</name>
+    <name>Bibliothek Verwaltung Webapp</name>
     <url>https://maven.apache.org</url>
 
 
@@ -32,12 +32,9 @@
 
 
     <dependencies>
+
         <!-- Link backend project -->
-         <dependency>
-            <groupId>net.apollo</groupId>
-            <artifactId>bibliothek-VerwaltungBackend</artifactId>
-            <version>>0.0.1-SNAPSHOT</version>
-        </dependency>
+
 
         <!-- JAVA EE -->
         <dependency>
