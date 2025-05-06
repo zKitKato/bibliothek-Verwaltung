@@ -2,15 +2,15 @@
 
 
 # TODO and Structuring
-- creating Porject Structure => *Done*
-  - Backend and Frontend Folder
+- creating Porject Structure => DONE 05.05.2025
+  - Backend and Frontend Folder => DONE 05.05.2025
 
-- creating DTO, DAO, DAOimpl => *DONE*
+- creating DTO, DAO, DAOimpl => DONE 05.05.2025
   - Benutzer
   - Buch 
 
-- creating pom.xml => TODO
-  - adding dependencies
+- creating pom.xml => Done 06.05.2025
+  - adding dependencies => DONE 06.05.2025
 
 
 
@@ -18,7 +18,17 @@
   - add the driver jar in project
   - creating the TABLEs:
   
-
+- creating the webapp:
+  -Web-Inf
+    - views
+      - flows
+        - contains all the stuff for ausleihe
+      - shared   
+  - assets
+    - css
+    - fonts
+    - imaages
+    - js
 
 - creating Logic folder Structure => TODO
   - Classes to implement:
