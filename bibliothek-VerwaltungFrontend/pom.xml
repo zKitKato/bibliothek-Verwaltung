@@ -15,23 +15,29 @@
 
     <!--Version information stored here -->
     <properties>
+        <maven.compiler.version>3.13.0</maven.compiler.version>
         <maven.compiler.source>24</maven.compiler.source>
         <maven.compiler.target>24</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <javaee.version>8.0.1</javaee.version>
+        <jstl.version>1.1.2</jstl.version>
+        <junit.version>4.13.1</junit.version>
+
+
         <spring.version>6.2.6</spring.version>
-        <spring.security.version>6.3.5</spring.security.version>
+        <spring.security.version>6.3.3</spring.security.version>
+        <spring-webflow.version>2.5.1.RELEASE</spring-webflow.version>
+
     </properties>
 
 
     <dependencies>
         <!-- Link backend project -->
-        <!-- <dependency>
+         <dependency>
             <groupId>net.apollo</groupId>
             <artifactId>bibliothek-VerwaltungBackend</artifactId>
             <version>>0.0.1-SNAPSHOT</version>
-        </dependency> -->
+        </dependency>
 
         <!-- JAVA EE -->
         <dependency>
@@ -45,7 +51,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -54,6 +60,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -66,14 +78,14 @@
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
-            <version>1.1.2</version>
+            <version>${jstl.version}</version>
         </dependency>
 
         <!-- Spring Webflow -->
         <dependency>
             <groupId>org.springframework.webflow</groupId>
             <artifactId>spring-webflow</artifactId>
-            <version>2.5.1.RELEASE</version>
+            <version>${spring-webflow.version}</version>
         </dependency>
 
         <!-- Spring Security -->
@@ -90,7 +102,7 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework-security</groupId>
+            <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-taglibs</artifactId>
             <version>${spring.security.version}</version>
         </dependency>
@@ -101,11 +113,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.12.0</version>
+                <version>${maven.compiler.version}</version>
                 <configuration>
                     <!-- Update for the latest version of JAVA -->
-                    <source>24</source>
-                    <target>24</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
 
