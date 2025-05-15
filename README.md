@@ -3,27 +3,23 @@
 # to run tomcat:
 
 # Run tomcat on this project
-  ``
+  ```
   mvn clean package
-``
-
-``
+  
 cp target/BibliothekVerwaltung.war /home/gian/apache-tomcat-10.1.41/webapps/
-``
 
-``
 /home/$(hostname)/apache-tomcat-10.1.41/bin/shutdown.sh
-``
 
-``
 /home/$(hostname)/apache-tomcat-10.1.41/bin/startup.sh
-``
 
-``
 http://localhost:8080/BibliothekVerwaltung/
-``
+```
 
+For checking the running server:
 
+```bash
+  sudo lsof -i :8080
+```
 
 
 # TODO and Structuring
