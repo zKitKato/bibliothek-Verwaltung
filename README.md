@@ -1,8 +1,7 @@
 # bibliothek-Verwaltung
 
-# to run tomcat:
 
-# Run tomcat on this project
+## Run tomcat on this project
   ```
   mvn clean package
   
@@ -22,8 +21,8 @@ For checking the running server:
 ```
 
 
-# TODO and Structuring
-- creating Porject Structure => DONE 05.05.2025
+## TODO and Structuring
+-[ ] creating Porject Structure => DONE 05.05.2025
   - Backend and Frontend Folder => DONE 05.05.2025
 
 - creating DTO, DAO, DAOimpl => DONE 05.05.2025
