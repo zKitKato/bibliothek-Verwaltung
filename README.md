@@ -5,7 +5,7 @@
   ```
   mvn clean package
   
-cp target/BibliothekVerwaltung.war /home/gian/apache-tomcat-10.1.41/webapps/
+cp target/BibliothekVerwaltung.war /home/$(hostname)/apache-tomcat-10.1.41/webapps/
 
 /home/$(hostname)/apache-tomcat-10.1.41/bin/shutdown.sh
 
