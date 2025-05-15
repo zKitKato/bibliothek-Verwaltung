@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.apollo</groupId>
-    <artifactId>bibliothek-VerwaltungFrontend</artifactId>#
+    <groupId>net.kato</groupId>
+    <artifactId>bibliothekVerwaltungFrontend</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -19,14 +19,17 @@
         <maven.compiler.source>24</maven.compiler.source>
         <maven.compiler.target>24</maven.compiler.target>
 
-        <javaee.version>8.0.1</javaee.version>
-        <jstl.version>1.1.2</jstl.version>
-        <junit.version>4.13.1</junit.version>
+        <javaee.version>8.0.1</javaee.version>                          <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+        <junit.version>5.13.0-M3</junit.version>                        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <jstl.version>3.0.2</jstl.version>                              <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
 
 
-        <spring.version>6.2.6</spring.version>
-        <spring.security.version>6.3.3</spring.security.version>
-        <spring-webflow.version>2.5.1.RELEASE</spring-webflow.version>
+        <spring-core.version>6.2.6</spring-core.version>                <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <spring-security.version>6.4.5</spring-security.version>        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+        <spring-webflow.version>3.0.1</spring-webflow.version>          <!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
+        <spring-webmvc.version>7.0.0-M4</spring-webmvc.version>         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+        <guava.version>33.4.8-jre</guava.version>                       <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 
     </properties>
 
@@ -35,6 +38,12 @@
 
         <!-- Link backend project -->
 
+        <!-- GUAVA -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
 
         <!-- JAVA EE -->
         <dependency>
@@ -46,8 +55,8 @@
 
         <!-- JUNIT -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
@@ -56,7 +65,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
+            <version>${spring-core.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>commons-logging</groupId>
@@ -68,13 +77,22 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
+            <version>${spring-webmvc.version}</version>
+        </dependency>
+
+
+        <!--Servlet-API -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>${jakarta.servlet-api.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- JSTL -->
         <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
             <version>${jstl.version}</version>
         </dependency>
 
@@ -86,23 +104,13 @@
         </dependency>
 
         <!-- Spring Security -->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-messaging</artifactId>
-            <version>${spring.security.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-            <version>${spring.security.version}</version>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring-security.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-taglibs</artifactId>
-            <version>${spring.security.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
