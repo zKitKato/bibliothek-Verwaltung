@@ -16,8 +16,8 @@
     <!--Version information stored here -->
     <properties>
         <maven.compiler.version>3.13.0</maven.compiler.version>
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
 
         <javaee.version>8.0.1</javaee.version>                          <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
         <junit.version>5.13.0-M3</junit.version>                        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
@@ -26,9 +26,9 @@
 
 
         <spring-core.version>6.2.6</spring-core.version>                <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-        <spring-security.version>6.4.5</spring-security.version>        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+        <spring-security.version>6.2.6</spring-security.version>        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
         <spring-webflow.version>3.0.1</spring-webflow.version>          <!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
-        <spring-webmvc.version>7.0.0-M4</spring-webmvc.version>         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <spring-webmvc.version>6.2.6</spring-webmvc.version>         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 
         <guava.version>33.4.8-jre</guava.version>                       <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 

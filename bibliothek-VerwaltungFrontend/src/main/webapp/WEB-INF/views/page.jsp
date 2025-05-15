@@ -1,4 +1,3 @@
-<jsp:useBean id="title" scope="application" type="java.lang.String"/>
 <%--
   Created by IntelliJ IDEA.
   User: gian
