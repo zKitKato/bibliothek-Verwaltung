@@ -22,13 +22,14 @@
         <javaee.version>8.0.1</javaee.version>                          <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
         <junit.version>5.13.0-M3</junit.version>                        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <jstl.version>3.0.2</jstl.version>                              <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
 
 
         <spring-core.version>6.2.6</spring-core.version>                <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
         <spring-security.version>6.4.5</spring-security.version>        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
         <spring-webflow.version>3.0.1</spring-webflow.version>          <!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
         <spring-webmvc.version>7.0.0-M4</spring-webmvc.version>         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+
         <guava.version>33.4.8-jre</guava.version>                       <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 
     </properties>
