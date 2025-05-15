@@ -22,7 +22,7 @@ For checking the running server:
 
 
 ## TODO and Structuring
--[ ] creating Porject Structure => DONE 05.05.2025
+- [ ] creating Porject Structure => DONE 05.05.2025
   - Backend and Frontend Folder => DONE 05.05.2025
 
 - creating DTO, DAO, DAOimpl => DONE 05.05.2025
