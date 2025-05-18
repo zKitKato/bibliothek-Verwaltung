@@ -16,7 +16,13 @@ public class PageController {
         return mv;
     }
 
-    /*@RequestMapping(value = "/test")
+
+}
+
+
+
+
+/*@RequestMapping(value = "/test")
     public ModelAndView test(@RequestParam(value="title", required = false)String greeting) {
         if (greeting == null) {
             greeting = "Welt!";
@@ -26,13 +32,12 @@ public class PageController {
         return mv;
     }*/
 
-    @RequestMapping(value = "/test/{greeting}")
-    public ModelAndView test(@PathVariable("greeting") String greeting) {
-        if (greeting == null) {
-            greeting = "Welt!";
-        }
-        ModelAndView mv = new ModelAndView("page");
-        mv.addObject("title", greeting);
-        return mv;
-    }
-}
+//    /*@RequestMapping(value = "/test/{greeting}")
+//    public ModelAndView test(@PathVariable("greeting") String greeting) {
+//        if (greeting == null) {
+//            greeting = "Welt!";
+//        }
+//        ModelAndView mv = new ModelAndView("page");
+//        mv.addObject("title", greeting);
+//        return mv;
+//    }*/
