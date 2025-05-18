@@ -32,6 +32,15 @@ public class PageController {
         mv.addObject("userClickContact", true);
         return mv;
     }
+
+    @RequestMapping("/profile")
+    public ModelAndView profile()  {
+        ModelAndView mv = new ModelAndView("page"); // Make sure this is "profile" or the name of your JSP file
+        mv.addObject("title", "Profile");
+        mv.addObject("userClickProfile", true);
+        return mv;
+    }
+
 }
 
 

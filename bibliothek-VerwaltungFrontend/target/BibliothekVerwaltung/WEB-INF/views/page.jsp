@@ -7,10 +7,10 @@
 
   Template: https://web.archive.org/web/20170110170915/https://blackrockdigital.github.io/startbootstrap-shop-homepage/
 --%>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@page contentType="text/html; charset=UTF-8" language="java" %>
 <jsp:useBean id="locales" scope="application"
              class="net.kato.bibliothekVerwaltungFrontend.controller.PageController"/>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 
@@ -29,7 +29,11 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Bibliothek Apollo - ${title}</title>
+        <title>Apollo Bibliothek - ${title}</title>
+
+        <script>
+            window.menu = '${title}';
+        </script>
 
         <!-- Bootstrap Core CSS -->
         <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -46,42 +50,56 @@
 
 </head>
     <body>
-        <!-- Navigation -->
-        <%@include file="./shared/navbar.jsp" %>
-
-        <!-- Page Content -->
-        <%-- Loading the Home page--%>
-        <c:if test="${userClickHome == true}">
-            <%@include file="home.jsp"%>
-        </c:if>
-
-        <%--Only when user click about--%>
-        <c:if test="${userClickAbout == true}">
-            <%@include file="about.jsp"%>
-        </c:if>
-
-        <%--Only when user click contact--%>
-        <c:if test="${userClickContact == true}">
-            <%@include file="contact.jsp"%>
-        </c:if>
+        <div class="wrapper">
 
 
-        <!-- /.container -->
+            <!-- Navigation -->
+            <%@include file="./shared/navbar.jsp" %>
 
-        <div class="container">
 
-            <hr>
+            <!-- Page Content -->
 
-            <!-- Footer -->
-            <%@include file="./shared/footer.jsp"%>
+            <div class="content">
+                <%-- Loading the Home page--%>
+                <c:if test="${userClickHome == true}">
+                    <%@include file="home.jsp"%>
+                </c:if>
 
+                <%--Only when user click about--%>
+                <c:if test="${userClickAbout == true}">
+                    <%@include file="about.jsp"%>
+                </c:if>
+
+                <%--Only when user click contact--%>
+                <c:if test="${userClickContact == true}">
+                    <%@include file="contact.jsp"%>
+                </c:if>
+
+                <%--Only when user click profile--%>
+                <c:if test="${userClickProfile == true}">
+                    <%@include file="profile.jsp"%>
+                </c:if>
+
+
+            </div>
+
+            <div class="container">
+
+                <!-- Footer -->
+                <%@include file="./shared/footer.jsp"%>
+
+            </div>
+            <!-- /.container -->
+
+            <!-- jQuery -->
+            <script src="${js}/jquery.js"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+            <script src="${js}/bootstrap.min.js"></script>
+
+            <%-- Self coded js --%>
+            <script src="${js}/myapp.js"></script>
         </div>
-        <!-- /.container -->
 
-        <!-- jQuery -->
-        <script src="${js}/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src=">${js}/bootstrap.min.js"></script>
     </body>
 </html>
