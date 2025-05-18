@@ -4,14 +4,136 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.apollo</groupId>
-    <artifactId>bibliothek-VerwaltungFrontend</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>net.kato</groupId>
+    <artifactId>bibliothekVerwaltungFrontend</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
 
+    <name>Bibliothek Verwaltung Webapp</name>
+    <url>https://maven.apache.org</url>
+
+
+    <!--Version information stored here -->
     <properties>
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.version>3.13.0</maven.compiler.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
+        <javaee.version>8.0.1</javaee.version>                          <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+        <junit.version>5.13.0-M3</junit.version>                        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <jstl.version>3.0.1</jstl.version>                              <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+
+
+        <spring-core.version>6.2.6</spring-core.version>                <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <spring-security.version>6.2.6</spring-security.version>        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+        <spring-webflow.version>3.0.1</spring-webflow.version>          <!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
+        <spring-webmvc.version>6.2.6</spring-webmvc.version>         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+
+        <guava.version>33.4.8-jre</guava.version>                       <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+
     </properties>
 
+
+    <dependencies>
+
+        <!-- Link backend project -->
+
+        <!-- GUAVA -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <!-- JAVA EE -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JUNIT -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- SPRING -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring-core.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring-webmvc.version}</version>
+        </dependency>
+
+
+        <!--Servlet-API -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>${jakarta.servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JSTL -->
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+        <!-- Spring Webflow -->
+        <dependency>
+            <groupId>org.springframework.webflow</groupId>
+            <artifactId>spring-webflow</artifactId>
+            <version>${spring-webflow.version}</version>
+        </dependency>
+
+        <!-- Spring Security -->
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <!-- Update for the latest version of JAVA -->
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+        <finalName>BibliothekVerwaltung</finalName>
+    </build>
 </project>

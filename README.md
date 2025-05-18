@@ -1,23 +1,56 @@
 # bibliothek-Verwaltung
 
 
-# TODO and Structuring
-- creating Porject Structure => *Done*
-  - Backend and Frontend Folder
+## Run tomcat on this project
+  ```
+  mvn clean package
+  
+cp target/BibliothekVerwaltung.war /home/$(hostname)/apache-tomcat-10.1.41/webapps/
 
-- creating DTO, DAO, DAOimpl => *DONE*
-  - Benutzer
-  - Buch 
+/home/$(hostname)/apache-tomcat-10.1.41/bin/shutdown.sh
 
-- creating pom.xml => TODO
-  - adding dependencies
+/home/$(hostname)/apache-tomcat-10.1.41/bin/startup.sh
+
+http://localhost:8080/BibliothekVerwaltung/
+```
+
+For checking the running server:
+
+```bash
+  sudo lsof -i :8080
+```
+
+
+## TODO and Structuring
+- [x] creating Porject Structure => DONE 05.05.2025
+  - Backend and Frontend Folder => DONE 05.05.2025
+
+- creating DTO, DAO, DAOimpl => DONE 05.05.2025
+ 
+
+- creating pom.xml => Done 06.05.2025
+  - adding dependencies => DONE 06.05.2025
 
 
 
 - creating the database: => TODO
   - add the driver jar in project
   - creating the TABLEs:
+
+
   
+- creating the webapp:
+  -Web-Inf
+    - views
+      - flows
+        - contains all the stuff for ausleihe
+      - shared   
+  - assets
+    - css
+    - fonts
+    - imaages
+    - js
+
 
 
 - creating Logic folder Structure => TODO

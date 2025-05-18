@@ -1,0 +1,12 @@
+net/kato/bibliothekVerwaltungBackend/dao/UserDAO.class
+net/kato/bibliothekVerwaltungBackend/daoimpl/BookDAOimpl.class
+net/kato/bibliothekVerwaltungBackend/dao/BookDAO.class
+net/kato/bibliothekVerwaltungBackend/dto/BookDTO.class
+net/kato/bibliothekVerwaltungBackend/dao/CategoryDAO.class
+net/kato/bibliothekVerwaltungBackend/daoimpl/UsersDAOimpl.class
+net/kato/bibliothekVerwaltungBackend/dao/AuthorDAO.class
+net/kato/bibliothekVerwaltungBackend/daoimpl/CategoryDAOimpl.class
+net/kato/bibliothekVerwaltungBackend/dto/AuthorDTO.class
+net/kato/bibliothekVerwaltungBackend/daoimpl/AuthorDAOimpl.class
+net/kato/bibliothekVerwaltungBackend/dto/UserDTO.class
+net/kato/bibliothekVerwaltungBackend/dto/CategoryDTO.class
