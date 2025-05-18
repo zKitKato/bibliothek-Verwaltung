@@ -21,7 +21,7 @@
 
         <javaee.version>8.0.1</javaee.version>                          <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
         <junit.version>5.13.0-M3</junit.version>                        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-        <jstl.version>3.0.2</jstl.version>                              <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+        <jstl.version>3.0.1</jstl.version>                              <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
         <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
 
 
@@ -97,6 +97,11 @@
             <version>${jstl.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
         <!-- Spring Webflow -->
         <dependency>
             <groupId>org.springframework.webflow</groupId>
