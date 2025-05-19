@@ -23,34 +23,36 @@ For checking the running server:
 
 ## TODO and Structuring
 - [x] creating Porject Structure => DONE 05.05.2025
-  - Backend and Frontend Folder => DONE 05.05.2025
+  - [x] Backend and Frontend Folder => DONE 05.05.2025
 
-- creating DTO, DAO, DAOimpl => DONE 05.05.2025
- 
+--- 
+- [x] creating DTO, DAO, DAOimpl => DONE 05.05.2025
 
-- creating pom.xml => Done 06.05.2025
-  - adding dependencies => DONE 06.05.2025
+---
 
+- [x] creating pom.xml => Done 06.05.2025
+  - [x] adding dependencies => DONE 06.05.2025
 
+---
+
+  
+- [x] creating the webapp:
+  - [x] Web-Inf
+    - [x] views
+      - [x] flows
+        - [x] contains all the stuff for ausleihe
+      - [x] shared   
+  - [x] assets
+    - [x] css
+    - [x] fonts
+    - [x] imaages
+    - [x] js
+
+---
 
 - creating the database: => TODO
   - add the driver jar in project
   - creating the TABLEs:
-
-
-  
-- creating the webapp:
-  -Web-Inf
-    - views
-      - flows
-        - contains all the stuff for ausleihe
-      - shared   
-  - assets
-    - css
-    - fonts
-    - imaages
-    - js
-
 
 
 - creating Logic folder Structure => TODO
