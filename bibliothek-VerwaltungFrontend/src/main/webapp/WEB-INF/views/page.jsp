@@ -80,7 +80,10 @@
                     <%@include file="profile.jsp"%>
                 </c:if>
 
-
+                    <%--Only when user click contact--%>
+                    <c:if test="${userClickShopItem == true}">
+                        <%@include file="bibitem.jsp"%>
+                    </c:if>
             </div>
 
             <div class="container">
@@ -89,6 +92,7 @@
                 <%@include file="./shared/footer.jsp"%>
 
             </div>
+
             <!-- /.container -->
 
             <!-- jQuery -->
