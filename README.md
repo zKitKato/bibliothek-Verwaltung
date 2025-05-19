@@ -1,7 +1,19 @@
 # bibliothek-Verwaltung
 
+## Content
+
+- Tomacat 10.1.41 Server
+- Maven
+- Spring
+- Bootstrap 3.3.7
+- Java 17
+- 
+
+
+
 
 ## Run tomcat on this project
+
   ```
   mvn clean package
   
