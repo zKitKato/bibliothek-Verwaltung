@@ -5,41 +5,58 @@ import java.util.List;
 
 import net.kato.bibliothekVerwaltungBackend.dao.CategoryDAO;
 import net.kato.bibliothekVerwaltungBackend.dto.CategoryDTO;
+import org.springframework.stereotype.Repository;
 
+@Repository("categoryDAO")
 public class CategoryDAOimpl  implements CategoryDAO {
 
-    private static List<CategoryDTO> categories = new ArrayList<CategoryDTO>();
+    private static List<CategoryDTO> categoriesDTO = new ArrayList<CategoryDTO>();
 
     /*
     * Testing Purpose data
     * */
 
     static{
-        CategoryDTO c1 = new CategoryDTO();
-        c1.setId(1);
-        c1.setName("Scientific");
-        c1.setDescription("Scientific Books for Physic's");
+        CategoryDTO categoryDTO  = new CategoryDTO();
+        categoryDTO.setId(1);
+        categoryDTO.setName("Scientific");
+        categoryDTO.setDescription("Scientific Books for Physic's");
+        categoriesDTO.add(categoryDTO);
 
-        CategoryDTO c2 = new CategoryDTO();
-        c2.setId(2);
-        c2.setName("Romantic");
-        c2.setDescription("Description for Romantic Books");
+        categoryDTO = new CategoryDTO();
+        categoryDTO.setId(2);
+        categoryDTO.setName("Romantic");
+        categoryDTO.setDescription("Description for Romantic Books");
+        categoriesDTO.add(categoryDTO);
 
-        CategoryDTO c3 = new CategoryDTO();
-        c3.setId(3);
-        c3.setName("Horror");
-        c3.setDescription("Description for Horror");
+        categoryDTO = new CategoryDTO();
+        categoryDTO.setId(3);
+        categoryDTO.setName("Horror");
+        categoryDTO.setDescription("Description for Horror");
+        categoriesDTO.add(categoryDTO);
 
-        CategoryDTO c4 = new CategoryDTO();
-        c4.setId(4);
-        c4.setName("novel");
-        c4.setDescription("Description for novel");
-
+        categoryDTO = new CategoryDTO();
+        categoryDTO.setId(4);
+        categoryDTO.setName("Novel");
+        categoryDTO.setDescription("Description for novel");
+        categoriesDTO.add(categoryDTO);
 
     }
 
     @Override
     public List<CategoryDTO> listofCategories() {
-        return categories;
+        System.out.println("Category List Size: " + categoriesDTO.size());
+        return categoriesDTO;
+    }
+
+    @Override
+    public CategoryDTO get(int id) {
+        for(CategoryDTO category : categoriesDTO){
+            if(category.getId() == id){
+                return category;
+            }
+
+        }
+        return null;
     }
 }
