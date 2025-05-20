@@ -69,8 +69,6 @@ public class PageController {
         ModelAndView mv = new ModelAndView("page");
         mv.addObject("title", "All Books");
 
-        //
-
         // passing the categories
         mv.addObject("categories", categoryDAO.listofCategories());
 
@@ -83,18 +81,13 @@ public class PageController {
         ModelAndView mv = new ModelAndView("page");
 
         //categoryDAO to fetch a single category
-
         CategoryDTO categoryDTO = null;
-        categoryDTO = categoryDAO.get(id);
-
+        categoryDTO = categoryDAO   .get(id);
         mv.addObject("title", categoryDTO.getName());
 
         // passing the categories
         mv.addObject("categories", categoryDAO.listofCategories());
-
         mv.addObject("categories", categoryDTO);
-
-
         mv.addObject("userClickCategoryBooks", true);
         return mv;
     }
