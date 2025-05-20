@@ -82,7 +82,7 @@ public class PageController {
 
         //categoryDAO to fetch a single category
         CategoryDTO categoryDTO = null;
-        categoryDTO = categoryDAO   .get(id);
+        categoryDTO = categoryDAO.get(id);
         mv.addObject("title", categoryDTO.getName());
 
         // passing the categories

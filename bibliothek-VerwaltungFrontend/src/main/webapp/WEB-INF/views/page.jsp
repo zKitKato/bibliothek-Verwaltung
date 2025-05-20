@@ -71,7 +71,7 @@
         </c:if>
 
         <%--Only when user click all books or the category--%>
-        <c:if test="${userClickCategoryBooks== true or userClickAllBooks == true}">
+        <c:if test="${userClickAllBooks == true or userClickCategoryBooks == true}">
             <%@include file="listBooks.jsp" %>
         </c:if>
 
