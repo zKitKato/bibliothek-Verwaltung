@@ -2,6 +2,7 @@
 
     <div class="row">
 
+        <!--Page sidebar for categories and Shop Name-->
         <div class="col-md-3">
             <p class="lead">Shop Name</p>
             <div class="list-group">
@@ -11,8 +12,10 @@
             </div>
         </div>
 
+
         <div class="col-md-9">
 
+            <!-- Carousel top view page-->
             <div class="row carousel-holder">
 
                 <div class="col-md-12">
@@ -39,19 +42,25 @@
                         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
+
                     </div>
                 </div>
 
             </div>
 
+            <!-- Shop Items-->
+
             <div class="row">
 
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
+                        <%--Only when user click contact--%>
+
                         <img src="https://web.archive.org/web/20170110170915im_/http://placehold.it/320x150" alt="">
                         <div class="caption">
                             <h4 class="pull-right">$24.99</h4>
-                            <h4><a href="#">First Product</a>
+                            <h4>
+                                <a href="${pageContext.request.contextPath}/bibitem?id=1">First Product</a>
                             </h4>
                             <p>See more snippets like this online store item at <a target="_blank" href="https://web.archive.org/web/20170110170915/http://www.bootsnipp.com/">Bootsnipp - http://bootsnipp.com</a>.</p>
                         </div>
@@ -66,6 +75,7 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="col-sm-4 col-lg-4 col-md-4">
@@ -95,7 +105,7 @@
                         <img src="https://web.archive.org/web/20170110170915im_/http://placehold.it/320x150" alt="">
                         <div class="caption">
                             <h4 class="pull-right">$74.99</h4>
-                            <h4><a href="#">Third Product</a>
+                            <h4><a href="${pageContext.request.contextPath}/bibitem?id=2">Third Product</a>
                             </h4>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>

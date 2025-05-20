@@ -16,6 +16,15 @@ public class PageController {
         mv.addObject("userClickHome", true);
         return mv;
     }
+    @RequestMapping(value = {"/bibitem"})
+    public ModelAndView bibitem(@RequestParam("id")int id) {
+        ModelAndView mv = new ModelAndView("page");
+        mv.addObject("title", "Item Details");
+        mv.addObject("userClickShopItem", true);
+        mv.addObject("itemid", id);
+        return mv;
+    }
+
 
     @RequestMapping(value = {"/about"})
     public ModelAndView about() {
@@ -33,7 +42,7 @@ public class PageController {
         return mv;
     }
 
-    @RequestMapping("/profile")
+    @RequestMapping(value = {"/profile"})
     public ModelAndView profile()  {
         ModelAndView mv = new ModelAndView("page"); // Make sure this is "profile" or the name of your JSP file
         mv.addObject("title", "Profile");
