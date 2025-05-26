@@ -67,7 +67,7 @@ For checking the running server:
   - creating the TABLEs:
 
 
-- creating Logic folder Structure => TODO
+- [x] creating Logic folder Structure => TODO
   - Classes to implement:
     - ausleihe:
       - check available_copies for ausleihe
