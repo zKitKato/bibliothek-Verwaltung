@@ -14,8 +14,8 @@
 
 ## Run tomcat on this project
 
-  ```
-  mvn clean package
+  ``` bash
+    mvn clean package
   
 cp target/BibliothekVerwaltung.war /home/$(hostname)/apache-tomcat-10.1.41/webapps/
 
@@ -31,6 +31,14 @@ For checking the running server:
 ```bash
   sudo lsof -i :8080
 ```
+
+## H2 Database
+
+```bash
+  java -cp h2*.jar org.h2.tools.Server
+```
+
+To start the H2 database to get the Generic.
 
 
 ## TODO and Structuring
