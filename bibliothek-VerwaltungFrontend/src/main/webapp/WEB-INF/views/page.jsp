@@ -80,6 +80,7 @@
             <%@include file="contact.jsp" %>
         </c:if>
 
+
         <%--Only when user click profile--%>
         <c:if test="${userClickProfile == true}">
             <%@include file="profile.jsp" %>

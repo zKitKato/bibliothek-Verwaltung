@@ -39,19 +39,18 @@ public class CategoryDAOimpl  implements CategoryDAO {
         categoryDTO.setId(4);
         categoryDTO.setName("Novel");
         categoryDTO.setDescription("Description for novel");
-        categoriesDTO.add(categoryDTO);
+        categories.add(categoryDTO);
 
     }
 
     @Override
     public List<CategoryDTO> listofCategories() {
-        System.out.println("Category List Size: " + categoriesDTO.size());
-        return categoriesDTO;
+        return categories;
     }
 
     @Override
     public CategoryDTO get(int id) {
-        for(CategoryDTO category : categoriesDTO){
+        for(CategoryDTO category : categories){
             if(category.getId() == id){
                 return category;
             }
