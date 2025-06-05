@@ -8,12 +8,12 @@ import java.util.List;
 
 public class BookDAOimpl implements BookDAO {
 
-    private static List<Books> books = new ArrayList<Books>();
+    //private static List<Books> books = new ArrayList<Books>();
     /*
      * Testing Purpose data
      * */
 
-    static {
+ /*   static {
         Books book1 = new Books();
         book1.setId(1);
         book1.setTitle("The Greate Gatsby");
@@ -23,10 +23,10 @@ public class BookDAOimpl implements BookDAO {
         book1.setCategoryId(4);
         book1.setTotal_copies(2);
         book1.setAvaliable_copies(2);
-    }
+    }*/
 
     @Override
     public List<Books> listOfBooks() {
-        return books;
+        return null;
     }
 }
