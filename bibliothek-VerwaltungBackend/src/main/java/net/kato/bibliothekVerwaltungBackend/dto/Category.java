@@ -1,12 +1,9 @@
 package net.kato.bibliothekVerwaltungBackend.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
-public class CategoryDTO {
+public class Category {
     /*
     * private fields
     * */
@@ -18,6 +15,8 @@ public class CategoryDTO {
 
     private String description;
 
+
+    @Column(name = "is_active")
     private boolean active = true;
 
 
@@ -55,6 +54,17 @@ public class CategoryDTO {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+
+    @Override
+    public String toString() {
+        return "CategoryDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", active=" + active +
+                '}';
     }
 }
 

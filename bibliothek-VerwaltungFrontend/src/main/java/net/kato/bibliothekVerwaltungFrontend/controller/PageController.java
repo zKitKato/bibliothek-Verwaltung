@@ -1,7 +1,7 @@
 package net.kato.bibliothekVerwaltungFrontend.controller;
 
 import net.kato.bibliothekVerwaltungBackend.dao.CategoryDAO;
-import net.kato.bibliothekVerwaltungBackend.dto.CategoryDTO;
+import net.kato.bibliothekVerwaltungBackend.dto.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -81,7 +81,7 @@ public class PageController {
         ModelAndView mv = new ModelAndView("page");
 
         //categoryDAO to fetch a single category
-        CategoryDTO category = null;
+        Category category = null;
         category = categoryDAO.get(id);
         mv.addObject("title", category.getName());
 

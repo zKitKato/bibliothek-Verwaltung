@@ -13,6 +13,28 @@
 
 
 ## Run tomcat on this project
+new command: Build backend, Frontend both copied to Sever and start server
+
+```bash
+  cd /home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend
+  
+  mvn clean package
+  
+  cp target/bibliothekVerwaltungBackend-0.0.1-SNAPSHOT.jar /home/gian/apache-tomcat-10.1.41/webapps/
+  
+  cd
+  
+  cd /home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungFrontend
+  
+  mvn clean package
+  
+  cp target/BibliothekVerwaltung.war /home/gian/apache-tomcat-10.1.41/webapps/
+  
+  /home/gian/apache-tomcat-10.1.41/bin/shutdown.sh
+  
+  /home/gian/apache-tomcat-10.1.41/bin/startup.sh
+```
+
 
   ``` bash
     mvn clean package

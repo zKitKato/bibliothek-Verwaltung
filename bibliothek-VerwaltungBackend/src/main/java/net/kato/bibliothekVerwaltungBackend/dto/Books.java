@@ -1,6 +1,6 @@
 package net.kato.bibliothekVerwaltungBackend.dto;
 
-public class BookDTO {
+public class Books {
     /*
     * Private Fields
      */

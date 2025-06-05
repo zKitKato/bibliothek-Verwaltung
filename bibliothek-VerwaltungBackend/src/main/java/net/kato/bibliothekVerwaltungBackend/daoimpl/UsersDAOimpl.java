@@ -1,31 +1,31 @@
 package net.kato.bibliothekVerwaltungBackend.daoimpl;
 
 import net.kato.bibliothekVerwaltungBackend.dao.UserDAO;
-import net.kato.bibliothekVerwaltungBackend.dto.UserDTO;
+import net.kato.bibliothekVerwaltungBackend.dto.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UsersDAOimpl implements UserDAO {
-    private static List<UserDTO> users = new ArrayList<>();
+    private static List<User> users = new ArrayList<>();
 
     /*
     * Testing Purpose data
     * */
 
     static {
-        UserDTO admin1 = new UserDTO();
+        User admin1 = new User();
         admin1.setUsername("admin");
         admin1.setPassword("admin");
 
-        UserDTO user2 = new UserDTO();
+        User user2 = new User();
         user2.setUsername("user");
         user2.setPassword("user");
 
     }
 
     @Override
-    public List<UserDTO> listOfUsers() {
+    public List<User> listOfUsers() {
         return users;
     }
 }

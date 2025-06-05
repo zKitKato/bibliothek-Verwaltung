@@ -1,20 +1,20 @@
 package net.kato.bibliothekVerwaltungBackend.daoimpl;
 
 import net.kato.bibliothekVerwaltungBackend.dao.BookDAO;
-import net.kato.bibliothekVerwaltungBackend.dto.BookDTO;
+import net.kato.bibliothekVerwaltungBackend.dto.Books;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BookDAOimpl implements BookDAO {
 
-    private static List<BookDTO> books = new ArrayList<BookDTO>();
+    private static List<Books> books = new ArrayList<Books>();
     /*
      * Testing Purpose data
      * */
 
     static {
-        BookDTO book1 = new BookDTO();
+        Books book1 = new Books();
         book1.setId(1);
         book1.setTitle("The Greate Gatsby");
         book1.setDescription("The Greate Gatsby");
@@ -26,7 +26,7 @@ public class BookDAOimpl implements BookDAO {
     }
 
     @Override
-    public List<BookDTO> listOfBooks() {
+    public List<Books> listOfBooks() {
         return books;
     }
 }

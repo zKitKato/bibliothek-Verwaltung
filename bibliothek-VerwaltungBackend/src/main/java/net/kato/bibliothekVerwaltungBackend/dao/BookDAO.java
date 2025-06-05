@@ -1,10 +1,10 @@
 package net.kato.bibliothekVerwaltungBackend.dao;
 
 
-import net.kato.bibliothekVerwaltungBackend.dto.BookDTO;
+import net.kato.bibliothekVerwaltungBackend.dto.Books;
 
 import java.util.List;
 
 public interface BookDAO {
-    List<BookDTO> listOfBooks();
+    List<Books> listOfBooks();
 }
