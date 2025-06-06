@@ -8,6 +8,6 @@
 /home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend/src/main/java/net/kato/bibliothekVerwaltungBackend/daoimpl/CategoryDAOimpl.java
 /home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend/src/main/java/net/kato/bibliothekVerwaltungBackend/daoimpl/UsersDAOimpl.java
 /home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend/src/main/java/net/kato/bibliothekVerwaltungBackend/dto/Author.java
-/home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend/src/main/java/net/kato/bibliothekVerwaltungBackend/dto/Books.java
+/home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend/src/main/java/net/kato/bibliothekVerwaltungBackend/dto/Book.java
 /home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend/src/main/java/net/kato/bibliothekVerwaltungBackend/dto/Category.java
 /home/gian/IdeaProjects/bibliothek-Verwaltung/bibliothek-VerwaltungBackend/src/main/java/net/kato/bibliothekVerwaltungBackend/dto/User.java

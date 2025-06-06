@@ -84,6 +84,14 @@ VALUES
     ('Sapiens', 4, 'Harvill Secker', '9780099590088', 2011, 3, 5),
     ('Pride and Prejudice', 5, 'T. Egerton', '9780141439518', 1813, 1, 2);
 
+
+-- === UPDATE BOOKS WITH IMAGE URLS ===
+UPDATE book SET image_url = 'https://covers.openlibrary.org/b/id/7222246-L.jpg' WHERE title = '1984';
+UPDATE book SET image_url = 'https://covers.openlibrary.org/b/id/8281991-L.jpg' WHERE title = 'Foundation';
+UPDATE book SET image_url = 'https://covers.openlibrary.org/b/id/8165416-L.jpg' WHERE title = 'A Brief History of Time';
+UPDATE book SET image_url = 'https://covers.openlibrary.org/b/id/8369254-L.jpg' WHERE title = 'Sapiens';
+UPDATE book SET image_url = 'https://covers.openlibrary.org/b/id/8231852-L.jpg' WHERE title = 'Pride and Prejudice';
+
 -- ========== LOANS ==========
 CREATE TABLE loan (
                       loan_id IDENTITY PRIMARY KEY,
