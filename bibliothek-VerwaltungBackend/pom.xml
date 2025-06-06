@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.kato</groupId>
-    <artifactId>bibliothek-VerwaltungBackend</artifactId>
+    <artifactId>bibliothekVerwaltungBackend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -72,9 +72,17 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.200</version>
+            <version>1.4.193</version>
             <scope>runtime</scope>
         </dependency>
+
+        <!-- Hibernate Dependency -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate-core.version}</version>
+        </dependency>
+
 
         <!-- MySQL Driver -->
         <dependency>
@@ -85,12 +93,7 @@
         </dependency>
 
 
-        <!-- Hibernate Dependency -->
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate-core.version}</version>
-        </dependency>
+
 
         <!-- Database Connection Pooling -->
         <dependency>
@@ -144,6 +147,7 @@
             <version>1.1.0.Final</version>
         </dependency>
     </dependencies>
+
 
     <build>
         <!-- Updated for the latest version of JAVA -->

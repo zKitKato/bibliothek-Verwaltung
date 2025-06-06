@@ -1,14 +1,14 @@
 package net.kato.bibliothekVerwaltungBackend.dto;
 
-public class CategoryDTO {
+public class Author {
     /*
-    * private fields
+    * Private fields
     * */
-    private int id;
-    private String name;
-    private String description;
-    private boolean active = true;
 
+    private int id;
+    private String firstName;
+    private String lastName;
+    private boolean active = true;
 
     /*
     * Getter and Setter
@@ -22,20 +22,20 @@ public class CategoryDTO {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getDescription() {
-        return description;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public boolean isActive() {
@@ -46,4 +46,3 @@ public class CategoryDTO {
         this.active = active;
     }
 }
-

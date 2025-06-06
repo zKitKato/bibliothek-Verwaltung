@@ -1,6 +1,6 @@
 package net.kato.bibliothekVerwaltungBackend.dto;
 
-public class UserDTO {
+public class User {
     /*
     * Private Fields
     * */

@@ -12,7 +12,9 @@ $(function (){
         case 'Profile':
             $('#profile').addClass('active');
             break;
-
+        case 'All Books':
+            $('#listBooks').addClass('active');
+            $('a_'+menu).addClass('active');
         default:
             $('#home').addClass('active');
             break;

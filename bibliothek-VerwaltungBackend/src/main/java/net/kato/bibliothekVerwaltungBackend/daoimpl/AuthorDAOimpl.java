@@ -1,26 +1,26 @@
 package net.kato.bibliothekVerwaltungBackend.daoimpl;
 
 import net.kato.bibliothekVerwaltungBackend.dao.AuthorDAO;
-import net.kato.bibliothekVerwaltungBackend.dto.AuthorDTO;
+import net.kato.bibliothekVerwaltungBackend.dto.Author;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AuthorDAOimpl implements AuthorDAO {
 
-    private static List<AuthorDTO> authors = new ArrayList<>();
+    private static List<Author> authors = new ArrayList<>();
 
     /*
      * Testing Purpose data
      * */
 
     static {
-        AuthorDTO a1 = new AuthorDTO();
+        Author a1 = new Author();
         a1.setId(1);
         a1.setFirstName("Anton");
         a1.setLastName("Zeillinger");
 
-        AuthorDTO a2 = new AuthorDTO();
+        Author a2 = new Author();
         a2.setId(2);
         a2.setFirstName("Francis");
         a2.setLastName("Scott Key Fitzgerald");
@@ -29,7 +29,7 @@ public class AuthorDAOimpl implements AuthorDAO {
 
 
     @Override
-    public List<AuthorDTO> listofAuthors() {
+    public List<Author> listofAuthors() {
         return authors;
     }
 }
