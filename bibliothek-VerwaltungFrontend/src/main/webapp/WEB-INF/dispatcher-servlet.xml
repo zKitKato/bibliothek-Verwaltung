@@ -13,7 +13,9 @@
        ">
 
         <context:component-scan base-package="net.kato.bibliothekVerwaltungFrontend.controller"/>
-        <context:component-scan base-package="net.kato.bibliothekVerwaltungBackend"/>
+        <context:component-scan base-package="net.kato.bibliothekVerwaltungBackend.daoimpl"/>
+        <context:component-scan base-package="net.kato.bibliothekVerwaltungBackend.dao"/>
+        <context:component-scan base-package="net.kato.bibliothekVerwaltungBackend.dto"/>
 
 
     <bean id="viewResolver"
